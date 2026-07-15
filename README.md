@@ -99,6 +99,12 @@ StreamMod checks for new versions automatically and can install them with one cl
 
 ---
 
+## Privacy
+
+StreamMod stores your settings and account tokens locally on your own PC — there's no StreamMod-operated server your data passes through. See the full [Privacy Policy](https://dragonsniper43.github.io/privacy-policy.html) for exactly what each connected service (Twitch, Google/YouTube, Discord) is used for.
+
+---
+
 ## Troubleshooting
 
 **Windows blocked the installer / "Windows protected your PC"**
