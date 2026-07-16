@@ -49,11 +49,13 @@ Lets you read YouTube Live Chat alongside Twitch chat, in the same window.
 
 To also *send* messages into YouTube chat, not just read them, you'll need one extra OAuth step:
 
-1. In Google Cloud Console, go to **APIs & Services → Credentials → Create Credentials → OAuth client ID**.
-2. Select **Application type: TV and Limited Input devices**.
-3. Copy the **Client ID** and **Client Secret**.
-4. In StreamMod **Settings → YouTube**, paste both values and click **Connect Google Account**.
-5. A code appears — visit the URL shown, enter the code, and authorise.
+1. Go to Google Cloud Console → create a new project (or use an existing one).,
+2. Enable the YouTube Data API v3 for that project.,
+3. Go to APIs & Services → OAuth consent screen → set it up (External, fill required fields) → leave it in Testing mode.,
+4. Under Test users, add your own Google account email (must add yourself since it's your project).,
+5. Go to APIs & Services → Credentials → Create Credentials → OAuth client ID → type Desktop app (check what type _google_device_flow expects — it's a device-code flow, so Desktop/TV type is right).,
+6. Copy the generated Client ID and Client Secret.,
+7. In the dashboard: Settings → YouTube → paste Client ID/Secret → click connect/auth.
 
 ### Discord (optional)
 
